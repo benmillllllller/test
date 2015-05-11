@@ -26,7 +26,7 @@ var jshint = require('gulp-jshint');
 
 // var ngAnnotate = require('gulp-ng-annotate');
 // var ngmin = require('gulp-ngmin');
-//var babel = require('gulp-babel');
+var babel = require('gulp-babel');
 
  
 var builder = new Builder();

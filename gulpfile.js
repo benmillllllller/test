@@ -18,7 +18,15 @@ var merge = require('merge2');
 
 var jshint = require('gulp-jshint');
 
+var karma = require('karma').server;
 
+gulp.task('test', function (done) {
+  console.log(__dirname);
+  karma.start({
+    configFile: __dirname + '/karma.conf.js',
+    singleRun: true
+  }, done);
+});
 //var runSequence = require('gulp-run-sequence');
 //var save = require('gulp-save');
 //var clean = require('gulp-clean');
